@@ -1,0 +1,1 @@
+[general](https://htmlpreview.github.io/?https://github.com/xtao-org/fitzjson/blob/master/examples/general.html)

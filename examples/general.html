@@ -1,0 +1,228 @@
+
+<!doctype HTML>
+<head>
+  <title>Tree-sitter Highlighting</title>
+  <style>
+    body {
+      font-family: monospace
+    }
+    .line-number {
+      user-select: none;
+      text-align: right;
+      color: rgba(27,31,35,.3);
+      padding: 0 10px;
+    }
+    .line {
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+<tr><td class=line-number>1</td><td class=line><span style='color: #008787'>first_name</span> <span style='color: #008700'>&#39;John&#39;</span>
+</td></tr>
+<tr><td class=line-number>2</td><td class=line><span style='color: #008787'>last_name</span> <span style='color: #008700'>&#39;Smith&#39;</span>
+</td></tr>
+<tr><td class=line-number>3</td><td class=line><span style='color: #008787'>is_alive</span> <span style='font-weight: bold;color: #875f00'>true</span>
+</td></tr>
+<tr><td class=line-number>4</td><td class=line><span style='color: #008787'>age</span> <span style='font-weight: bold;color: #875f00'>27</span>
+</td></tr>
+<tr><td class=line-number>5</td><td class=line><span style='color: #008787'>address</span> {
+</td></tr>
+<tr><td class=line-number>6</td><td class=line>  <span style='color: #008787'>street_address</span> <span style='color: #008700'>&#39;21 2nd Street&#39;</span>
+</td></tr>
+<tr><td class=line-number>7</td><td class=line>  <span style='color: #008787'>city</span> <span style='color: #008700'>&#39;New York&#39;</span>
+</td></tr>
+<tr><td class=line-number>8</td><td class=line>  <span style='color: #008787'>state</span> <span style='color: #008700'>&#39;NY&#39;</span>
+</td></tr>
+<tr><td class=line-number>9</td><td class=line>  <span style='color: #008787'>postal_code</span> <span style='color: #008700'>&#39;10021-3100&#39;</span>
+</td></tr>
+<tr><td class=line-number>10</td><td class=line>}
+</td></tr>
+<tr><td class=line-number>11</td><td class=line><span style='color: #008787'>phone_numbers</span> [
+</td></tr>
+<tr><td class=line-number>12</td><td class=line>  {
+</td></tr>
+<tr><td class=line-number>13</td><td class=line>    <span style='color: #008787'>type</span> <span style='color: #008700'>&#39;home&#39;</span>
+</td></tr>
+<tr><td class=line-number>14</td><td class=line>    <span style='color: #008787'>number</span> <span style='color: #008700'>&#39;212 555-1234&#39;</span>
+</td></tr>
+<tr><td class=line-number>15</td><td class=line>  }
+</td></tr>
+<tr><td class=line-number>16</td><td class=line>  {
+</td></tr>
+<tr><td class=line-number>17</td><td class=line>    <span style='color: #008787'>type</span> <span style='color: #008700'>&#39;office&#39;</span>
+</td></tr>
+<tr><td class=line-number>18</td><td class=line>    <span style='color: #008787'>number</span> <span style='color: #008700'>&#39;646 555-4567&#39;</span>
+</td></tr>
+<tr><td class=line-number>19</td><td class=line>  }
+</td></tr>
+<tr><td class=line-number>20</td><td class=line>]
+</td></tr>
+<tr><td class=line-number>21</td><td class=line><span style='color: #008787'>children</span> []
+</td></tr>
+<tr><td class=line-number>22</td><td class=line><span style='color: #008787'>spouse</span> <span style='font-weight: bold;color: #875f00'>null</span>
+</td></tr>
+<tr><td class=line-number>23</td><td class=line>
+</td></tr>
+<tr><td class=line-number>24</td><td class=line><span style='font-style: italic;color: #8a8a8a'>// last modified 1 April 2001 by John Doe</span>
+</td></tr>
+<tr><td class=line-number>25</td><td class=line><span style='color: #008787'>owner</span> {
+</td></tr>
+<tr><td class=line-number>26</td><td class=line>  <span style='color: #008787'>name</span> <span style='color: #008700'>&#39;John Doe&#39;</span>
+</td></tr>
+<tr><td class=line-number>27</td><td class=line>  <span style='color: #008787'>organization</span> <span style='color: #008700'>&#39;Acme Widgets Inc.&#39;</span>
+</td></tr>
+<tr><td class=line-number>28</td><td class=line>}
+</td></tr>
+<tr><td class=line-number>29</td><td class=line><span style='color: #008787'>database</span> {
+</td></tr>
+<tr><td class=line-number>30</td><td class=line>  <span style='font-style: italic;color: #8a8a8a'>// use IP if name resolution is not working</span>
+</td></tr>
+<tr><td class=line-number>31</td><td class=line>  <span style='color: #008787'>server</span> <span style='color: #008700'>&#39;192.0.2.62&#39;</span>
+</td></tr>
+<tr><td class=line-number>32</td><td class=line>  <span style='color: #008787'>port</span> <span style='font-weight: bold;color: #875f00'>143</span>
+</td></tr>
+<tr><td class=line-number>33</td><td class=line>  <span style='color: #008787'>file</span> <span style='color: #008700'>&#39;payroll.dat&#39;</span>
+</td></tr>
+<tr><td class=line-number>34</td><td class=line>  <span style='color: #008787'>select_columns</span> [
+</td></tr>
+<tr><td class=line-number>35</td><td class=line>    <span style='color: #008700'>&#39;name&#39;</span>
+</td></tr>
+<tr><td class=line-number>36</td><td class=line>    <span style='color: #008700'>&#39;address&#39;</span>
+</td></tr>
+<tr><td class=line-number>37</td><td class=line>    <span style='color: #008700'>&#39;phone number&#39;</span>
+</td></tr>
+<tr><td class=line-number>38</td><td class=line>  ]
+</td></tr>
+<tr><td class=line-number>39</td><td class=line>}
+</td></tr>
+<tr><td class=line-number>40</td><td class=line>
+</td></tr>
+<tr><td class=line-number>41</td><td class=line><span style='color: #008787'>dob</span> <span style='color: #000087'>@date</span> <span style='color: #008700'>&#39;1979-05-27T07:32:00-08:00&#39;</span>
+</td></tr>
+<tr><td class=line-number>42</td><td class=line>
+</td></tr>
+<tr><td class=line-number>43</td><td class=line><span style='color: #008787'>xyz</span> <span style='color: #000087'>@u8</span> <span style='font-weight: bold;color: #875f00'>23</span>
+</td></tr>
+<tr><td class=line-number>44</td><td class=line>
+</td></tr>
+<tr><td class=line-number>45</td><td class=line><span style='color: #008787'>data</span>: [ [<span style='color: #008700'>&quot;delta&quot;</span> <span style='color: #008700'>&quot;phi&quot;</span>] [<span style='font-weight: bold;color: #875f00'>3.14</span>] ]
+</td></tr>
+<tr><td class=line-number>46</td><td class=line><span style='color: #008787'>temp_targets</span>: { <span style='color: #008787'>cpu</span>: <span style='font-weight: bold;color: #875f00'>79.5</span> <span style='color: #008787'>case</span>: <span style='font-weight: bold;color: #875f00'>72.0</span> }
+</td></tr>
+<tr><td class=line-number>47</td><td class=line>
+</td></tr>
+<tr><td class=line-number>48</td><td class=line><span style='color: #008787'>sss</span> <span style='color: #000087'>@u16</span> <span style='font-weight: bold;color: #875f00'>333</span>
+</td></tr>
+<tr><td class=line-number>49</td><td class=line>
+</td></tr>
+<tr><td class=line-number>50</td><td class=line><span style='color: #000087'>@su</span>
+</td></tr>
+<tr><td class=line-number>51</td><td class=line><span style='font-style: italic;color: #8a8a8a'>~</span><span style='font-style: italic;color: #8a8a8a'>xyz</span>: <span style='font-style: italic;color: #8a8a8a'><span style='font-weight: bold;color: #875f00'>33</span></span>
+</td></tr>
+<tr><td class=line-number>52</td><td class=line>
+</td></tr>
+<tr><td class=line-number>53</td><td class=line><span style='font-style: italic;color: #8a8a8a'>/<span style='color: #008700'>&#39;comment as string&#39;</span></span>
+</td></tr>
+<tr><td class=line-number>54</td><td class=line>
+</td></tr>
+<tr><td class=line-number>55</td><td class=line><span style='color: #008787'>cpu</span>: <span style='font-weight: bold;color: #875f00'>79.5</span> <span style='color: #008787'>case</span>: <span style='font-weight: bold;color: #875f00'>72.0</span>
+</td></tr>
+<tr><td class=line-number>56</td><td class=line>
+</td></tr>
+<tr><td class=line-number>57</td><td class=line><span style='color: #000087'>@<span style='font-style: italic;color: #8a8a8a'>~</span>x</span>
+</td></tr>
+<tr><td class=line-number>58</td><td class=line><span style='color: #000087'>@<span style='font-style: italic;color: #8a8a8a'>~</span>y</span>
+</td></tr>
+<tr><td class=line-number>59</td><td class=line><span style='color: #000087'>@z</span>
+</td></tr>
+<tr><td class=line-number>60</td><td class=line><span style='font-style: italic;color: #8a8a8a'>~</span><span style='font-style: italic;color: #8a8a8a'>key</span> <span style='font-style: italic;color: #8a8a8a'>[<span style='font-style: italic;color: #8a8a8a'>~</span><span style='font-weight: bold;color: #875f00'>1</span> <span style='font-style: italic;color: #8a8a8a'>~</span><span style='font-weight: bold;color: #875f00'>2</span> <span style='font-style: italic;color: #8a8a8a'>~</span><span style='font-weight: bold;color: #875f00'>3</span>]</span>
+</td></tr>
+<tr><td class=line-number>61</td><td class=line>
+</td></tr>
+<tr><td class=line-number>62</td><td class=line><span style='color: #008787'>multiline</span> <span style='color: #008700'>``&#39;/* */</span>
+</td></tr>
+<tr><td class=line-number>63</td><td class=line><span style='color: #008700'>(entry [65, 0] - [67, 1]</span>
+</td></tr>
+<tr><td class=line-number>64</td><td class=line><span style='color: #008700'>      key: (unquoted [65, 0] - [65, 5])</span>
+</td></tr>
+<tr><td class=line-number>65</td><td class=line><span style='color: #008700'>      value: (string [65, 6] - [67, 1]</span>
+</td></tr>
+<tr><td class=line-number>66</td><td class=line><span style='color: #008700'>        (multistring [65, 6] - [67, 1]</span>
+</td></tr>
+<tr><td class=line-number>67</td><td class=line><span style='color: #008700'>          (ms0 [65, 6] - [67, 1]))))</span>
+</td></tr>
+<tr><td class=line-number>68</td><td class=line><span style='color: #008700'>/* */&#39;``</span>
+</td></tr>
+<tr><td class=line-number>69</td><td class=line>
+</td></tr>
+<tr><td class=line-number>70</td><td class=line><span style='color: #008787'>m1</span> <span style='color: #008700'>&#39;sadasd&#39;</span>
+</td></tr>
+<tr><td class=line-number>71</td><td class=line>
+</td></tr>
+<tr><td class=line-number>72</td><td class=line><span style='color: #008787'>m2</span> [<span style='color: #008700'>`&#39;a&#39;`</span><span style='color: #008700'>`&#39;b&#39;`</span><span style='color: #008700'>&#39;c&#39;</span><span style='color: #008700'>&#39;d&#39;</span>]
+</td></tr>
+<tr><td class=line-number>73</td><td class=line>
+</td></tr>
+<tr><td class=line-number>74</td><td class=line><span style='color: #008787'>x</span> <span style='color: #008700'>&#39;  </span>
+</td></tr>
+<tr><td class=line-number>75</td><td class=line><span style='color: #008700'> /**/  </span>
+</td></tr>
+<tr><td class=line-number>76</td><td class=line><span style='color: #008700'> x  </span>
+</td></tr>
+<tr><td class=line-number>77</td><td class=line><span style='color: #008700'> /**/</span>
+</td></tr>
+<tr><td class=line-number>78</td><td class=line><span style='color: #008700'>  &#39;</span>
+</td></tr>
+<tr><td class=line-number>79</td><td class=line>
+</td></tr>
+<tr><td class=line-number>80</td><td class=line><span style='color: #008787'>hj</span> {
+</td></tr>
+<tr><td class=line-number>81</td><td class=line>  <span style='font-style: italic;color: #8a8a8a'>~</span><span style='font-style: italic;color: #8a8a8a'>jh</span>: <span style='font-style: italic;color: #8a8a8a'><span style='font-weight: bold;color: #875f00'>1</span></span>
+</td></tr>
+<tr><td class=line-number>82</td><td class=line>}
+</td></tr>
+<tr><td class=line-number>83</td><td class=line>
+</td></tr>
+<tr><td class=line-number>84</td><td class=line><span style='color: #008787'>inf</span>: <span style='font-weight: bold;color: #875f00'>-Infinity</span>
+</td></tr>
+<tr><td class=line-number>85</td><td class=line><span style='font-style: italic;color: #8a8a8a'>//nan: -NaN</span>
+</td></tr>
+<tr><td class=line-number>86</td><td class=line>
+</td></tr>
+<tr><td class=line-number>87</td><td class=line><span style='color: #008787'>t</span>: <span style='color: #000087'>@bigint</span> <span style='font-weight: bold;color: #875f00'>149320829840243721987429873421891209840873209874109889732148709120987421</span>
+</td></tr>
+<tr><td class=line-number>88</td><td class=line><span style='color: #008787'>u</span>: <span style='color: #000087'>@i32</span> <span style='font-weight: bold;color: #875f00'>2147483647</span>
+</td></tr>
+<tr><td class=line-number>89</td><td class=line><span style='color: #008787'>name</span>: <span style='color: #008700'>&#39;John&#39;</span>
+</td></tr>
+<tr><td class=line-number>90</td><td class=line><span style='color: #008787'>vars</span>: {
+</td></tr>
+<tr><td class=line-number>91</td><td class=line>  <span style='color: #008787'>name</span>: <span style='color: #008700'>&#39;Mildred&#39;</span>
+</td></tr>
+<tr><td class=line-number>92</td><td class=line>  <span style='color: #008787'>surname</span>: <span style='color: #000087'>@join</span> [self.name<span style='color: #008700'>&#39;ovsky&#39;</span>]
+</td></tr>
+<tr><td class=line-number>93</td><td class=line>}
+</td></tr>
+<tr><td class=line-number>94</td><td class=line><span style='color: #008787'>xzs</span>: [<span style='color: #000087'>@i32</span> <span style='font-weight: bold;color: #875f00'>5</span>]
+</td></tr>
+<tr><td class=line-number>95</td><td class=line><span style='color: #008787'>message</span>: <span style='color: #000087'>@join</span> [<span style='color: #008700'>&#39;Hello, &#39;</span>$.vars.name<span style='color: #008700'>&#39;! BTW PATH is &#39;</span><span style='color: #000087'>@env</span> PATH]
+</td></tr>
+<tr><td class=line-number>96</td><td class=line><span style='color: #008787'>also</span>: [$(<span style='color: #008700'>&#39;vars&#39;</span>)(<span style='color: #008700'>&#39;name&#39;</span>)]
+</td></tr>
+<tr><td class=line-number>97</td><td class=line><span style='color: #008787'>xml</span>: <span style='color: #000087'>@xml</span> <span style='color: #008700'>```&#39;</span>
+</td></tr>
+<tr><td class=line-number>98</td><td class=line><span style='color: #008700'>  &lt;div&gt;</span>
+</td></tr>
+<tr><td class=line-number>99</td><td class=line><span style='color: #008700'>    &lt;p&gt;hello&lt;/p&gt;</span>
+</td></tr>
+<tr><td class=line-number>100</td><td class=line><span style='color: #008700'>  &lt;/div&gt;</span>
+</td></tr>
+<tr><td class=line-number>101</td><td class=line><span style='color: #008700'>&#39;```</span>
+</td></tr>
+</table>
+
+</body>
+
