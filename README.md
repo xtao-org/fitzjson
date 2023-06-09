@@ -4,8 +4,7 @@ This is a little format I've been working on which originated as a hybrid of JSO
 
 In the design I've tried to address the frequently-complained-about aspects of JSON, add facilities that would make the format pleasant to work with in a text editor (with a primary focus being configuration) as well as introduce a simple but powerful extension mechanism with a familiar syntax. All this while trying to preserve and build further on the self-describing property of JSON. Also in the minimal spirit of JSON I tried to keep the formal definition and spec no less concise than it has to be.
 
-<!-- todo: link to README.html -->
-[HTML Preview](https://htmlpreview.github.io/?)
+[HTML Preview](https://htmlpreview.github.io/?https://github.com/xtao-org/fitzjson/blob/master/README.html)
 
 # fitzJSON
 
