@@ -1,0 +1,18 @@
+someHtml: @html ```'
+  <div>
+    <p>hello</p>
+  </div>
+  '```
+someMarkdown: @md ```'
+  # Title
+
+  Paragraph
+
+  List:
+
+  * item 1
+  * item 2
+  '```
+substitutions: @$ ```'
+  Hello, ${name}!
+  '```
