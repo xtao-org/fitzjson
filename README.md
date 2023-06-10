@@ -6,7 +6,10 @@ In the design I've tried to address the frequently-complained-about aspects of J
 
 [EXAMPLES.md](EXAMPLES.md)
 
-# fitzJSON
+<p align=center>
+<img src="logo.svg" alt="logo" width="160"/>
+<h1 align=center>fitzJSON</h1>
+</p>
 
 fitzJSON is a JSON-compatible format optimized for configuration.
 
