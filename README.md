@@ -127,7 +127,7 @@ On top of the JSON number syntax, fitzJSON adds:
 * Hexadecimal `0x`, octal `0o`, and binary `0b` number literals.
 * Optional `_` digit separators in number literals.
 
-```js
+<!-- ```js
 seq(
   optional(/[+-]/),
   choice(
@@ -139,7 +139,7 @@ seq(
     /0[xX][0-9a-fA-F](_?[0-9a-fA-F])*/,
   )
 )
-```
+``` -->
 
 ### More relaxed syntax
 
