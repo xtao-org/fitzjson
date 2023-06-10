@@ -7,7 +7,7 @@ In the design I've tried to address the frequently-complained-about aspects of J
 [EXAMPLES.md](EXAMPLES.md)
 
 <p align=center>
-<img src="logo.svg" alt="logo" width="160"/>
+<img src="logo2.png" alt="logo" width="160"/>
 <h1 align=center>fitzJSON</h1>
 </p>
 
