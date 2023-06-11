@@ -13,7 +13,7 @@ In the design I've tried to address the frequently-complained-about aspects of J
 
 fitzJSON is a JSON-compatible format optimized for configuration.
 
-fitzJSON is compatible with JSON in that a syntactically valid JSON document is also a syntactically valid fitzJSON document.
+fitzJSON is compatible with [JSON](http://www.json.org/) ([ECMA-404](http://www.ecma-international.org/publications/standards/Ecma-404.htm)/[RFC 8259](https://tools.ietf.org/html/rfc8259)) in that a syntactically valid JSON document is also a syntactically valid fitzJSON document.
 
 However, fitzJSON clarifies how numbers and objects should be interpreted by default (in accordance with interoperability guidelines from [RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259)) and introduces additional features on top of JSON.
 
