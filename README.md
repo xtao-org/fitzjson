@@ -11,7 +11,7 @@ In the design I've tried to address the frequently-complained-about aspects of J
 <h1 align=center>fitzJSON</h1>
 </p>
 
-fitzJSON is a JSON-compatible format optimized for configuration.
+fitzJSON (or "fitz" for short) is a JSON-compatible format optimized for configuration.
 
 fitzJSON is compatible with [JSON](http://www.json.org/) ([ECMA-404](http://www.ecma-international.org/publications/standards/Ecma-404.htm)/[RFC 8259](https://tools.ietf.org/html/rfc8259)) in that a syntactically valid JSON document is also a syntactically valid fitzJSON document.
 
@@ -26,6 +26,12 @@ fitzJSON does not attempt to be a strict subset of ECMAScript, though it does ha
 You can easily play with the format today in JavaScript using the [reference implementation](https://github.com/xtao-org/fitzjson.js) of `fitzJSON.parse` and `fitzJSON.stringify` which are meant to be drop-in replacements for `JSON.parse` and `JSON.stringify`.
 
 WARNING: these are still largely experimental and untested. Feedback welcome!
+
+## File extension
+
+The file extension for fitzJSON files should be `.fitz`.
+
+A sensible media type would then be `text/fitz`.
 
 ## Features on top of JSON
 
