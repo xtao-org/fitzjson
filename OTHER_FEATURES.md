@@ -6,6 +6,31 @@ Some may be considered for removal, some for addition, most have been experiment
 
 These are up for discussion.
 
+## Paths
+
+Note: This is partially implemented, but I'm considering replacing it with specialized decorators to keep the syntax more minimal.
+
+Referencing subvalues in a fitzJSON document by path.
+
+Absolute:
+
+```
+top.identifier
+top.identifier.path('to').somewhere(0)
+```
+
+Relative to parent object/map:
+
+```
+self.xyz
+```
+
+Referencing environment variables:
+
+```
+env.PATH
+```
+
 ## String-like comments
 
 fitzJSON also allows string-like comments:

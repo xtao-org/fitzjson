@@ -21,6 +21,12 @@ fitzJSON does not attempt to be a strict subset of ECMAScript, though it does ha
 
  <!-- and so will be semi-compatible with JSON5 et al. Also with edn  -->
 
+## Drop-in replacement for JSON.stringify and JSON.parse
+
+You can easily play with the format today in JavaScript using the [reference implementation](https://github.com/xtao-org/fitzjson.js) of `fitzJSON.parse` and `fitzJSON.stringify` which are meant to be drop-in replacements for `JSON.parse` and `JSON.stringify`.
+
+WARNING: these are still largely experimental and untested. Feedback welcome!
+
 ## Features on top of JSON
 
 ### Comments
@@ -148,29 +154,6 @@ seq(
 * colons to separate keys from values are similarly optional
 * keys in objects can be unquoted, provided they look like identifiers
 * a fitzJSON document that represents an object can be written without the top-level braces
-
-### Paths
-
-Referencing subvalues in a fitzJSON document by path.
-
-Absolute:
-
-```
-top.identifier
-top.identifier.path('to').somewhere(0)
-```
-
-Relative to parent object/map:
-
-```
-self.xyz
-```
-
-Referencing environment variables:
-
-```
-env.PATH
-```
 
 ## Powerful combination of features
 
