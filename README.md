@@ -1,4 +1,5 @@
-[EXPERIMENTAL]
+> [!WARNING]
+> [EXPERIMENTAL]
 
 This is a little format I've been working on which originated as a hybrid of JSON and a configuration format built on top of a variant of [Jevko](https://jevko.org) (some documentation of an early version [here](http://darius.j.pl/djed.html)).
 
