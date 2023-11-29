@@ -1,7 +1,7 @@
 > [!WARNING]
 > [EXPERIMENTAL]
 
-This is a little format I've been working on which originated as a hybrid of JSON and a configuration format built on top of a variant of [Jevko](https://jevko.org) (some documentation of an early version [here](http://darius.j.pl/djed.html)).
+This is a little format I've been working on which originated as a hybrid of JSON and a configuration format built on top of a variant of [Jevko](https://jevko.org) (some documentation of early versions [here](http://darius.j.pl/djed.html) and [here](http://darius.j.pl/djedat.html)).
 
 In the design I've tried to address the frequently-complained-about aspects of JSON, add facilities that would make the format pleasant to work with in a text editor (with a primary focus being configuration) as well as introduce a simple but powerful extension mechanism with a familiar syntax. All this while trying to preserve and build further on the self-describing property of JSON. Also in the minimal spirit of JSON I tried to keep the formal definition and spec no less concise than it has to be.
 
